@@ -47,7 +47,7 @@ Now, you are ready to *ssh copy* the setup script on one of your Raspberry Pis a
 ```bash
 cd build/
 scp gg.RaspberryPiGGP.sh pi@$RPI_IP:~
-ssh pi@$RPI_IP:~/gg.RaspberryPiGGP.sh
+ssh pi@$RPI_IP "~/gg.RaspberryPiGGP.sh"
 ```
 
 The bootstrap script will ask you the following three questions:
