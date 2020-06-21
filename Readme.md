@@ -86,7 +86,12 @@ After a successful deployment, the last four lines you see in the console should
 On the AWS IoT console on AWS, subscribe to the `+/+/hello/world` topic and you should see messages showing up every 5 seconds like this:
 
 ```json
-Hello world! Sent from Greengrass Core running on platform: Linux-4.9.30-v7+-armv7l-with-debian-9.1 c9855443-944a-4184-992a-b810438c0273 RaspberryPiGGP_Core arn:aws:iot:us-east-1:5xxxxxxxxxx7:thing/RaspberryPiGGP_Core
+{
+  "group_id": "4602bcec-8921-4204-8ea6-d79b6588204a",
+  "thing_name": "RaspberryPiGGP_Core",
+  "thing_arn": "arn:aws:iot:eu-central-1:xxxxxxxxxxxx:thing/RaspberryPiGGP_Core",
+  "message": "Hello world! Sent from Greengrass Core from Python 3.7.3 running on platform Linux-4.19.118-v7+-armv7l-with-debian-10.4 4602bcec-8921-4204-8ea6-d79b6588204a RaspberryPiGGP_Core arn:aws:iot:eu-central-1:xxxxxxxxxxxx:thing/RaspberryPiGGP_Core"
+}
 ```
 
 ## Acknowledgement
